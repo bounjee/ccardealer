@@ -3,9 +3,16 @@ import './homePage.css'
 import { ReactComponent as KibrisarabamLogo } from '../assets/kibrislogo.svg';
 import { ReactComponent as PhoneLogo } from '../assets/phone.svg'; // Telefon ikonu
 import { ReactComponent as WhatsappLogo } from '../assets/whatsapp.svg'; // WhatsApp ikonu
+<<<<<<< HEAD
 import { ReactComponent as MainCardPhoto } from '../assets/rect.svg';
 import { ReactComponent as InstagramLogo } from '../assets/instagram.svg';
 import { Link } from 'react-router-dom';
+=======
+import { ReactComponent as MainCardPhoto } from '../assets/300x300.svg';
+import { ReactComponent as InstagramLogo } from '../assets/instagram.svg';
+import { Link } from 'react-router-dom';
+import Navbar from "./components/Navbar";
+>>>>>>> 6c8e917 (Made Improvements on Mainpage)
 
 // import { ReactComponent as BackgroundLogo } from '../assets/background.svg'; // WhatsApp ikonu
 
@@ -16,6 +23,7 @@ import { Link } from 'react-router-dom';
 function HomePage() {
   return (
     <div className='main-class'>
+<<<<<<< HEAD
       {/* --------HEADER SECTION-------- */}
       <div className='header'>
         <div className='header_logo'>
@@ -41,6 +49,38 @@ function HomePage() {
         {/* <BackgroundLogo />  */}
         <div className='hero-logo'></div>
         <div className='hero-search_bar'></div>
+=======
+      <Navbar />
+      {/* --------HEADER SECTION-------- */}
+      {/* <div className='header'>
+        <div className='header_logo'>
+        <a href='#'><KibrisarabamLogo /> </a>
+        </div>
+        <div className='header_menu'>
+          <a href='#'><ul className='header_menu-item'>Anasayfa</ul></a>
+          <a href='#'><ul className='header_menu-item'>Araçlarımız</ul></a>
+          <a href='#'><ul className='header_menu-item'>İletişim</ul></a>
+        </div>
+        <div className='header_buttons'>
+          <div className='header_menu-button-phone'>
+          <a href='#'><PhoneLogo /></a> 
+          </div>
+          <div className='header_menu-button-whatsapp'>
+          <a href='#'><WhatsappLogo /> </a>
+          </div>
+        </div>
+      </div> */}
+
+      {/* --------HERO SECTION-------- */}
+      <section className='hero'>
+        <div className='hero-overlay'>
+          {/* <BackgroundLogo />  */}
+          <div className='hero-search_bar'>
+            <button className="search-button">🔍</button>
+            <input type="text" placeholder="Arama yapın"/>
+          </div>
+        </div>
+>>>>>>> 6c8e917 (Made Improvements on Mainpage)
       </section>
 
       {/* --------MAIN SECTION-------- */}
@@ -70,6 +110,7 @@ function HomePage() {
       {/* --------FOOTER SECTION-------- */}
       <footer className='footer'>
         <div className='footer_menu'>
+<<<<<<< HEAD
           <ul className='footer_menu-item'>Yerimiz</ul>
           <ul className='footer_menu-item'>Araçlarımız</ul>
           <ul className='footer_menu-item'>İletişim</ul>
@@ -78,6 +119,14 @@ function HomePage() {
           <ul className='footer_menu-instagram'>
           <InstagramLogo/>
           </ul>
+=======
+          <a href='#'><ul className='footer_menu-item'>Yerimiz</ul></a>
+          <a href='#'><ul className='footer_menu-item'>Araçlarımız</ul></a>
+          <a href='#'><ul className='footer_menu-item'>İletişim</ul></a>
+        </div>
+        <div className='footer_icons'>
+          <a href='#'><ul className='footer_menu-instagram'><InstagramLogo/></ul></a>
+>>>>>>> 6c8e917 (Made Improvements on Mainpage)
         </div> 
         <div className='footer_company-text'>Kibrisarabam @ 2024 All rights reserved.</div>
       </footer>
